@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+ </head> 
+ <body> 
+   <div class="box"><br/>
+   <form class="needs-validation" novalidate="" id="submit_info"> 
+    <label for="name"><br/>姓名</label> 
+    <input type="text" id="name" required="" /> 
+    <label for="major">专业</label> 
+    <input type="text" id="major" required="" /> 
+    <label for="studentId">学号</label> 
+    <input type="text" id="studentId" required="" /> 
+    <label for="phone">手机号</label> 
+    <input type="text" id="phone" required="" /> 
+    <label>离校日期</label> 
+    <input type="text" id="leaveYear" placeholder="" required="" />
+    <span>年</span> 
+    <input type="text" id="leaveMonth" placeholder="" required="" />
+    <span>月</span> 
+    <input type="text" id="leaveDay" placeholder="" required="" />
+    <span>日</span> 
+    <input type="text" id="leaveHour" placeholder="" required="" />
+    <span>点</span> 
+    <label>返校日期</label> 
+    <input type="text" id="backYear" placeholder="" required="" />
+    <span>年</span> 
+    <input type="text" id="backMonth" placeholder="" required="" />
+    <span>月</span> 
+    <input type="text" id="backDay" placeholder="" required="" />
+    <span>日</span> 
+    <input type="text" id="backHour" placeholder="" required="" />
+    <span>点</span> 
+    <label>去往何处</label> 
+    <input type="text" id="province" placeholder="" required="" />
+    <span>省</span> 
+    <input type="text" id="city" placeholder="" required="" />
+    <span>市</span> 
+    <input type="text" id="district" placeholder="" required="" />
+    <span>区</span> 
+    <label for="reason">离校原因</label> 
+    <input type="text" id="reason" required="" /> 
+    <label for="departureTransport">离校交通车次</label> 
+    <input type="text" id="departureTransport" required="" /> 
+    <label for="returnTransport">返校交通车次</label> 
+    <input type="text" id="returnTransport" required="" /> 
+    <label for="contactPhone" class="form-label">离校第一联系人电话</label> 
+    <input type="text" id="contactPhone" required="" /> 
+    <label for="contactName" class="form-label">本人与离校联系人的关系</label> 
+    <input type="text" id="contactName" required="" /> 
+    <br />
+    <button type="submit" style="margin: 20px 0;">&emsp;立即生成&emsp;</button>
+   </form><br/><br/>
+  </div>
+  <style>.box {max-width: 600px;width: 95%;margin: 0 auto;}* {font-size: 16px;line-height: 2;margin: 0;padding: 0;} a{color:#0080ff;text-decoration: none;margin-left: 20px;font-weight: normal;}label{display: block;font-weight: bold;}</style> 
+  <script type="text/javascript">document.getElementById("submit_info").addEventListener("submit",function(e){e.preventDefault();var e=document.getElementById("name").value,t=document.getElementById("major").value,n=document.getElementById("studentId").value,d=document.getElementById("phone").value,l=document.getElementById("leaveYear").value,u=document.getElementById("leaveMonth").value,a=document.getElementById("leaveDay").value,m=document.getElementById("leaveHour").value,o=document.getElementById("backYear").value,c=document.getElementById("backMonth").value,v=document.getElementById("backDay").value,y=document.getElementById("backHour").value,r=document.getElementById("province").value,g=document.getElementById("city").value,E=document.getElementById("district").value,I=document.getElementById("reason").value,B=document.getElementById("departureTransport").value,i=document.getElementById("returnTransport").value,s=document.getElementById("contactName").value,f=document.getElementById("contactPhone").value;e&&t&&n&&d&&l&&u&&a&&m&&o&&c&&v&&y&&g&&E&&I&&B&&i&&s&&f?(e="PDFViewer.html?"+new URLSearchParams({na:e,nm:t,nd:n,np:d,ly:l,li:u,lr:a,ld:m,fy:o,fi:c,fr:v,fd:y,wp:r,ws:g,wq:E,gy:I,lc:B,fc:i,xg:s,xd:f}),window.location.href=e):(alert("有未填的空"),$("#if_success").modal("hide"))});document.title='nenuist-gohome';</script>
+</body>
+</html>
